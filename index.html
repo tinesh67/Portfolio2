@@ -399,17 +399,18 @@
         <path d="M310 70 L290 70 L290 50" stroke="#25607a" stroke-width="1.2" fill="none" opacity="0.3"/>
         <path d="M50 290 L70 290 L70 310" stroke="#25607a" stroke-width="1.2" fill="none" opacity="0.3"/>
         <path d="M310 290 L290 290 L290 310" stroke="#25607a" stroke-width="1.2" fill="none" opacity="0.3"/>
-        <!-- CLEAN GEARS -->
-
-<g transform="translate(160,170)">
-  <circle r="60" fill="white" stroke="#25607a" stroke-width="3"/>
-  <circle r="20" fill="#ddeaf0" stroke="#25607a" stroke-width="2"/>
-</g>
-
-<g transform="translate(260,140)">
-  <circle r="40" fill="white" stroke="#b8935a" stroke-width="3"/>
-  <circle r="12" fill="#f3e2c7" stroke="#b8935a" stroke-width="2"/>
-</g>
+        <!-- Large gear (10 teeth, mathematically generated) -->
+        <path d="M 227.09 158.91 L 241.57 161.57 L 241.57 178.43 L 227.09 181.09 A 68 68 0 0 1 220.79 200.47 L 230.94 211.13 L 221.04 224.76 L 207.76 218.40 A 68 68 0 0 1 191.28 230.38 L 193.22 244.97 L 177.19 250.18 L 170.19 237.23 A 68 68 0 0 1 149.81 237.23 L 142.81 250.18 L 126.78 244.97 L 128.72 230.38 A 68 68 0 0 1 112.24 218.40 L 98.96 224.76 L 89.06 211.13 L 99.21 200.47 A 68 68 0 0 1 92.91 181.09 L 78.43 178.43 L 78.43 161.57 L 92.91 158.91 A 68 68 0 0 1 99.21 139.53 L 89.06 128.87 L 98.96 115.24 L 112.24 121.60 A 68 68 0 0 1 128.72 109.62 L 126.78 95.03 L 142.81 89.82 L 149.81 102.77 A 68 68 0 0 1 170.19 102.77 L 177.19 89.82 L 193.22 95.03 L 191.28 109.62 A 68 68 0 0 1 207.76 121.60 L 221.04 115.24 L 230.94 128.87 L 220.79 139.53 A 68 68 0 0 1 227.09 158.91 Z"
+              stroke="#25607a" stroke-width="2" stroke-linejoin="round" fill="white" fill-opacity="0.75"/>
+        <!-- Large gear inner hub rings -->
+        <circle cx="160" cy="170" r="22" stroke="#25607a" stroke-width="1.8" fill="#ddeaf0"/>
+        <circle cx="160" cy="170" r="7" fill="#25607a" opacity="0.45"/>
+        <!-- Small gear (8 teeth, mathematically generated) -->
+        <path d="M 280.93 109.55 L 292.39 110.62 L 292.39 125.38 L 280.93 126.45 A 34 34 0 0 1 277.26 135.32 L 284.61 144.17 L 274.17 154.61 L 265.32 147.26 A 34 34 0 0 1 256.45 150.93 L 255.38 162.39 L 240.62 162.39 L 239.55 150.93 A 34 34 0 0 1 230.68 147.26 L 221.83 154.61 L 211.39 144.17 L 218.74 135.32 A 34 34 0 0 1 215.07 126.45 L 203.61 125.38 L 203.61 110.62 L 215.07 109.55 A 34 34 0 0 1 218.74 100.68 L 211.39 91.83 L 221.83 81.39 L 230.68 88.74 A 34 34 0 0 1 239.55 85.07 L 240.62 73.61 L 255.38 73.61 L 256.45 85.07 A 34 34 0 0 1 265.32 88.74 L 274.17 81.39 L 284.61 91.83 L 277.26 100.68 A 34 34 0 0 1 280.93 109.55 Z"
+              stroke="#b8935a" stroke-width="1.8" stroke-linejoin="round" fill="white" fill-opacity="0.75"/>
+        <!-- Small gear inner hub rings -->
+        <circle cx="248" cy="118" r="11" stroke="#b8935a" stroke-width="1.5" fill="#f5ede0"/>
+        <circle cx="248" cy="118" r="4" fill="#b8935a" opacity="0.45"/>
         <!-- Dimension line -->
         <line x1="40" y1="320" x2="320" y2="320" stroke="#25607a" stroke-width="1" opacity="0.25"/>
         <polygon points="40,317 40,323 32,320" fill="#25607a" opacity="0.25"/>
@@ -618,7 +619,7 @@
   <h2 class="reveal reveal-delay-1">Ready to build<br>something <em>great</em>?</h2>
   <p class="reveal reveal-delay-2">Whether you're looking to hire a mechanical engineer, collaborate on a project, or just want to connect — I'd love to hear from you.</p>
   <div class="contact-links reveal reveal-delay-3">
-    <a href="mailto:tinesh@email.com" class="contact-btn email">
+    <a href="/cdn-cgi/l/email-protection#8cf8e5e2e9ffe4cce9e1ede5e0a2efe3e1" class="contact-btn email">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
       Send an Email
     </a>
@@ -634,7 +635,7 @@
   <span class="footer-bottom">© 2025 Tinesh Devakumar — Mechanical Engineering Graduate</span>
 </section>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Sticky nav
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -650,13 +651,4 @@
         entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
           const target = parseFloat(bar.style.getPropertyValue('--target') || '1');
           bar.style.width = (target * 100) + '%';
-          bar.classList.add('animated');
-        });
-      }
-    });
-  }, { threshold: 0.12 });
-
-  reveals.forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+          bar.classList
